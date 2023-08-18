@@ -1,0 +1,17 @@
+.DS_Store
+phpcs.xml
+composer.lock
+package-lock.json
+phpcs_report.txt
+
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.zip
+*.js.map
+
+/vendor
+/node_modules
