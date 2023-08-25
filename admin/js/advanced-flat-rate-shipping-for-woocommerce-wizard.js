@@ -17,8 +17,8 @@
             var nextStep = 'step' + ( parseInt( curruntStep.slice(4,5) ) + 1 ); // Masteringjs.io
 
             if( 'step5' !== curruntStep ) {
-                jQuery( '#' + curruntStep ).hide();
-                jQuery( '#' + nextStep ).show();  
+                jQuery( '#' + curruntStep ).hide()
+                jQuery( '#' + nextStep ).show()  
             }
         });
 
