@@ -18,7 +18,7 @@
 
             if( 'step5' !== curruntStep ) {
                 jQuery( '#' + curruntStep ).hide();
-                jQuery( '#' + nextStep ).show();   
+                jQuery( '#' + nextStep ).show();  
             }
         });
 
