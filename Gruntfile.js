@@ -18,7 +18,7 @@ module.exports = function(grunt){
             'Author URI of the plugin/theme',
             'Description of the plugin/theme'
         ];
-        GRUNT_VERSION = '1.2.0'; // This is the version of grunt (Do not change this section without consulting [sagar.jariwala@multidots.com]!)
+        GRUNT_VERSION = '2.0.0'; // This is the version of grunt (Do not change this section without consulting [sagar.jariwala@multidots.com]!)
     var PLUGIN_NAME = PLUGIN_MAIN_FILE.replaceAll("-","_").replaceAll(".php",""); //Plugin name with underscore
 
     //Configuration
