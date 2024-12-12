@@ -1,8 +1,4 @@
 <?php
-// If this file is called directly, abort.
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
 /**
  * The admin-specific functionality of the plugin.
  *
@@ -12,6 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @package    Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro
  * @subpackage Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro/admin
  */
+
 /**
  * The admin-specific functionality of the plugin.
  *
@@ -22,6 +19,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @subpackage Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro/admin
  * @author     Multidots <inquiry@multidots.in>
  */
+
+ // If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin {
 	const afrsm_shipping_post_type = 'wc_afrsm';
 	const afrsm_zone_post_type     = 'wc_afrsm_zone';
@@ -682,7 +685,6 @@ class Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin {
 							'checkout_specific'              => esc_html__( 'Checkout Specific', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'success_msg1'                   => esc_html__( 'Shipping method order saved successfully', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'success_msg2'                   => esc_html__( 'Your settings successfully saved.', 'advanced-flat-rate-shipping-for-woocommerce' ),
-							'warning_msg1'                   => sprintf( __( '<p><b style="color: red;">Note: </b>If entered price is more than total shipping price than Message looks like: <b>Shipping Method Name: Curreny Symbole like($) -60.00 Price </b> and if shipping minus price is more than total price than it will set Total Price to Zero(0).</p>', 'advanced-flat-rate-shipping-for-woocommerce' ) ),
 							'note'                           => esc_html__( 'Note: ', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'click_here'                     => esc_html__( 'Click Here', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'current_url'                    => $current_url,
@@ -698,8 +700,6 @@ class Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin {
 							'min_max_qty_error'                => esc_html__( 'Max qty should greater then min qty', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'min_max_weight_error'             => esc_html__( 'Max weight should greater then min weight', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'min_max_subtotal_error'           => esc_html__( 'Max subtotal should greater then min subtotal', 'advanced-flat-rate-shipping-for-woocommerce' ),
-							'success_msg1'                     => esc_html__( 'Shipping method order saved successfully', 'advanced-flat-rate-shipping-for-woocommerce' ),
-							'success_msg2'                     => esc_html__( 'Your settings successfully saved.', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'warning_msg1'                     => sprintf( __( '<p><b style="color: red;">Note: </b>If entered price is more than total shipping price than Message looks like: <b>Shipping Method Name: Curreny Symbole like($) -60.00 Price </b> and if shipping minus price is more than total price than it will set Total Price to Zero(0).</p>', 'advanced-flat-rate-shipping-for-woocommerce' ) ),
 							'warning_msg2'                     => esc_html__( 'Please disable Advance Pricing Rule if you dont need because you have not created rule there.', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'warning_msg3'                     => esc_html__( 'You need to select product specific option in Shipping Method Rules for product based option', 'advanced-flat-rate-shipping-for-woocommerce' ),
@@ -777,9 +777,6 @@ class Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin {
                             'order_history'                  => esc_html__( 'Order History', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'cart_specific'                  => esc_html__( 'Cart Specific', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'checkout_specific'              => esc_html__( 'Checkout Specific', 'advanced-flat-rate-shipping-for-woocommerce' ),
-							'success_msg1'                   => esc_html__( 'Shipping method order saved successfully', 'advanced-flat-rate-shipping-for-woocommerce' ),
-							'success_msg2'                   => esc_html__( 'Your settings successfully saved.', 'advanced-flat-rate-shipping-for-woocommerce' ),
-							'warning_msg1'                   => sprintf( __( '<p><b style="color: red;">Note: </b>If entered price is more than total shipping price than Message looks like: <b>Shipping Method Name: Curreny Symbole like($) -60.00 Price </b> and if shipping minus price is more than total price than it will set Total Price to Zero(0).</p>', 'advanced-flat-rate-shipping-for-woocommerce' ) ),
 							'note'                           => esc_html__( 'Note: ', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'click_here'                     => esc_html__( 'Click Here', 'advanced-flat-rate-shipping-for-woocommerce' ),
 							'current_url'                    => $current_url,
@@ -5486,7 +5483,7 @@ class Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin {
 	 *
 	 * @param mixed $postcode
 	 *
-	 * @return void
+	 * @return string $numeric_postcode
 	 * @since  1.0.0
 	 *
 	 * Converts letters to numbers so we can do a simple range check on postcodes.

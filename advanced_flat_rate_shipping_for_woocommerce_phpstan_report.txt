@@ -1,0 +1,777 @@
+ ------- ----------------------------------------------------------------------------------------- 
+  Line    admin/class-advanced-flat-rate-shipping-for-woocommerce-admin.php                        
+ ------- ----------------------------------------------------------------------------------------- 
+  1232    Variable $sm_status in isset() always exists and is not nullable.                        
+  1328    Variable $attribute_taxonomies might not be defined.                                     
+  1363    Variable $country_array in isset() always exists and is not                              
+          nullable.                                                                                
+  1372    Variable $product_array in isset() always exists and is not                              
+          nullable.                                                                                
+  1381    Variable $category_array in isset() always exists and is not                             
+          nullable.                                                                                
+  1390    Variable $tag_array in isset() always exists and is not nullable.                        
+  1399    Variable $user_array in isset() always exists and is not nullable.                       
+  1408    Variable $cart_total_array in isset() always exists and is not                           
+          nullable.                                                                                
+  1417    Variable $quantity_array in isset() always exists and is not                             
+          nullable.                                                                                
+  1427    Variable $width_array in isset() always exists and is not nullable.                      
+  1437    Variable $height_array in isset() always exists and is not nullable.                     
+  1447    Variable $length_array in isset() always exists and is not nullable.                     
+  1457    Variable $volume_array in isset() always exists and is not nullable.                     
+  1467    Variable $state_array in isset() always exists and is not nullable.                      
+  1476    Variable $city_array in isset() always exists and is not nullable.                       
+  1485    Variable $postcode_array in isset() always exists and is not                             
+          nullable.                                                                                
+  1494    Variable $zone_array in isset() always exists and is not nullable.                       
+  1506    Variable $variableproduct_array in isset() always exists and is not                      
+          nullable.                                                                                
+  1506    Variable $variableproduct_array might not be defined.                                    
+  1515    Variable $sku_array in isset() always exists and is not nullable.                        
+  1515    Variable $sku_array might not be defined.                                                
+  1524    Variable $product_qty_array in isset() always exists and is not                          
+          nullable.                                                                                
+  1524    Variable $product_qty_array might not be defined.                                        
+  1533    Variable $atta_name in isset() always exists and is not nullable.                        
+  1533    Variable $atta_name might not be defined.                                                
+  1534    Variable $variation_cart_products_array might not be defined.                            
+  1543    Variable $user_role_array in isset() always exists and is not                            
+          nullable.                                                                                
+  1543    Variable $user_role_array might not be defined.                                          
+  1552    Variable $last_spent_order_array in isset() always exists and is not                     
+          nullable.                                                                                
+  1552    Variable $last_spent_order_array might not be defined.                                   
+  1561    Variable $coupon_array in isset() always exists and is not nullable.                     
+  1561    Variable $coupon_array might not be defined.                                             
+  1570    Variable $cart_totalafter_array in isset() always exists and is not                      
+          nullable.                                                                                
+  1570    Variable $cart_totalafter_array might not be defined.                                    
+  1579    Variable $cart_productspecific_array in isset() always exists and is                     
+          not nullable.                                                                            
+  1579    Variable $cart_productspecific_array might not be defined.                               
+  1588    Variable $weight_array in isset() always exists and is not nullable.                     
+  1588    Variable $weight_array might not be defined.                                             
+  1597    Variable $shipping_class_array in isset() always exists and is not                       
+          nullable.                                                                                
+  1597    Variable $shipping_class_array might not be defined.                                     
+  1606    Variable $payment_methods_array in isset() always exists and is not                      
+          nullable.                                                                                
+  1606    Variable $payment_methods_array might not be defined.                                    
+  1650    Variable $final_is_passed_general_rule in empty() always exists and                      
+          is not falsy.                                                                            
+  1652    Variable $final_is_passed_general_rule in empty() always exists and                      
+          is not falsy.                                                                            
+  1654    Variable $final_is_passed_general_rule in empty() always exists and                      
+          is not falsy.                                                                            
+  1658    Variable $new_is_passed in empty() always exists and is not falsy.                       
+  1658    Variable $new_is_passed in isset() always exists and is not                              
+          nullable.                                                                                
+  1704    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1706    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1708    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1710    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1715    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1717    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1719    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1721    Variable $final_condition_flag in empty() always exists and is not                       
+          falsy.                                                                                   
+  1818    Variable $cart_value in empty() always exists and is not falsy.                          
+  1862    Variable $cart_product_category in isset() always exists and is not                      
+          nullable.                                                                                
+  1871    Variable $cart_product_tag in isset() always exists and is not                           
+          nullable.                                                                                
+  2524    Variable $cart_product_category in isset() always exists and is not                      
+          nullable.                                                                                
+  2646    Variable $cart_product_tag in isset() always exists and is not                           
+          nullable.                                                                                
+  2766    Variable $product_sku in isset() always exists and is not nullable.                      
+  3422    Variable $final_cart_products_size_not_in_flag might not be defined.                     
+  5652    Variable $objects_ids in isset() always exists and is not nullable.                      
+  5685    Variable $shipping_display_mode in isset() always exists and is not                      
+          nullable.                                                                                
+  5707    Variable $shipping_display_mode in isset() always exists and is not                      
+          nullable.                                                                                
+  5714    Variable $afrsm_force_customer_to_select_sm in isset() always exists                     
+          and is not nullable.                                                                     
+  5773    Variable $att_taxonomy might not be defined.                                             
+  5986    Variable $get_zones_data in isset() always exists and is not                             
+          nullable.                                                                                
+  6002    Variable $filter_zone in isset() always exists and is not nullable.                      
+  6106    Variable $get_all_products in isset() always exists and is not                           
+          nullable.                                                                                
+  6134    Variable $baselang_product_ids in isset() always exists and is not                       
+          nullable.                                                                                
+  6178    Variable $get_all_categories in isset() always exists and is not                         
+          nullable.                                                                                
+  6190    Variable $selected in empty() always exists and is not falsy.                            
+  6243    Variable $get_all_tags in isset() always exists and is not nullable.                     
+  6255    Variable $selected in empty() always exists and is not falsy.                            
+  6321    Variable $att_taxonomy in isset() always exists and is not nullable.                     
+  6436    Variable $get_all_categories in isset() always exists and is not                         
+          nullable.                                                                                
+  6497    Variable $get_all_tags in isset() always exists and is not nullable.                     
+  6572    Variable $baselang_product_ids in isset() always exists and is not                       
+          nullable.                                                                                
+  6577    Variable $product_sku might not be defined.                                              
+  6641    Variable $get_all_users in isset() always exists and is not                              
+          nullable.                                                                                
+  6794    Inner named functions are not supported by PHPStan. Consider                             
+          refactoring to an anonymous function, class method, or a                                 
+          top-level-defined function. See issue #165                                               
+          (https://github.com/phpstan/phpstan/issues/165) for more details.                        
+  6818    Function remove_filter invoked with 4 parameters, 2-3 required.                          
+  6821    Variable $get_all_products in isset() always exists and is not                           
+          nullable.                                                                                
+  6836    Variable $baselang_product_ids in isset() always exists and is not                       
+          nullable.                                                                                
+  6875    Inner named functions are not supported by PHPStan. Consider                             
+          refactoring to an anonymous function, class method, or a                                 
+          top-level-defined function. See issue #165                                               
+          (https://github.com/phpstan/phpstan/issues/165) for more details.                        
+  6897    Function remove_filter invoked with 4 parameters, 2-3 required.                          
+  6900    Variable $get_all_products in isset() always exists and is not                           
+          nullable.                                                                                
+  6914    Variable $baselang_product_ids in isset() always exists and is not                       
+          nullable.                                                                                
+  6947    Inner named functions are not supported by PHPStan. Consider                             
+          refactoring to an anonymous function, class method, or a                                 
+          top-level-defined function. See issue #165                                               
+          (https://github.com/phpstan/phpstan/issues/165) for more details.                        
+  6968    Variable $get_all_products in empty() always exists and is not                           
+          falsy.                                                                                   
+  6989    Variable $baselang_product_ids in isset() always exists and is not                       
+          nullable.                                                                                
+  7027    Inner named functions are not supported by PHPStan. Consider                             
+          refactoring to an anonymous function, class method, or a                                 
+          top-level-defined function. See issue #165                                               
+          (https://github.com/phpstan/phpstan/issues/165) for more details.                        
+  7047    Function remove_filter invoked with 4 parameters, 2-3 required.                          
+  7049    Variable $get_all_products in isset() always exists and is not                           
+          nullable.                                                                                
+  7077    Variable $baselang_product_ids in isset() always exists and is not                       
+          nullable.                                                                                
+  7157    Method                                                                                   
+          Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin::afrsm_pro_fees_conditions_save()  
+          should return bool but return statement is missing.                                      
+  7833    Variable $fee_settings_unique_shipping_title might not be defined.                       
+  7834    Variable $sm_free_shipping_cost_before_discount might not be                             
+          defined.                                                                                 
+  7835    Variable $cost_rule_match might not be defined.                                          
+  7836    Variable $main_rule_condition might not be defined.                                      
+  7837    Variable $how_to_apply might not be defined.                                             
+  7839    Variable $sm_fee_chk_qty_price might not be defined.                                     
+  7840    Variable $sm_fee_per_qty might not be defined.                                           
+  7841    Variable $sm_extra_product_cost might not be defined.                                    
+  7843    Variable $sm_estimation_delivery might not be defined.                                   
+  7844    Variable $sm_start_date might not be defined.                                            
+  7845    Variable $sm_end_date might not be defined.                                              
+  7847    Variable $cost_on_product_status might not be defined.                                   
+  7848    Variable $cost_on_product_weight_status might not be defined.                            
+  7849    Variable $cost_on_product_subtotal_status might not be defined.                          
+  7850    Variable $cost_on_category_status might not be defined.                                  
+  7851    Variable $cost_on_category_weight_status might not be defined.                           
+  7852    Variable $cost_on_category_subtotal_status might not be defined.                         
+  7853    Variable $cost_on_tag_status might not be defined.                                       
+  7854    Variable $cost_on_tag_subtotal_status might not be defined.                              
+  7855    Variable $cost_on_tag_weight_status might not be defined.                                
+  7856    Variable $cost_on_total_cart_qty_status might not be defined.                            
+  7857    Variable $cost_on_shipping_class_status might not be defined.                            
+  7858    Variable $cost_on_shipping_class_weight_status might not be defined.                     
+  7859    Variable $cost_on_shipping_class_subtotal_status might not be                            
+          defined.                                                                                 
+  7860    Variable $cost_on_product_attribute_status might not be defined.                         
+  7861    Variable $sm_free_shipping_cost_left_notice might not be defined.                        
+  7862    Variable $sm_free_shipping_cost_left_notice_msg might not be                             
+          defined.                                                                                 
+  7888    Variable $is_allow_custom_weight_base might not be defined.                              
+  7889    Variable $sm_custom_weight_base_cost might not be defined.                               
+  7890    Variable $sm_custom_weight_base_per_each might not be defined.                           
+  7891    Variable $sm_custom_weight_base_over might not be defined.                               
+  7892    Variable $is_allow_custom_qty_base might not be defined.                                 
+  7893    Variable $sm_custom_qty_base_cost might not be defined.                                  
+  7894    Variable $sm_custom_qty_base_per_each might not be defined.                              
+  7895    Variable $sm_custom_qty_base_over might not be defined.                                  
+  7897    Variable $sm_free_shipping_based_on_product might not be defined.                        
+  7898    Variable $sm_free_shipping_exclude_product might not be defined.                         
+  7899    Variable $is_free_shipping_exclude_prod might not be defined.                            
+  7954    Method                                                                                   
+          Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Admin::afrsm_pro_admin_footer_review()   
+          should return string but return statement is missing.                                    
+  7977    Variable $get_post_id in empty() always exists and is not falsy.                         
+  8018    Variable $new_post_id might not be defined.                                              
+  8421    Variable $postcode_location_type might not be defined.                                   
+  8426    Variable $postcode_location_type might not be defined.                                   
+  8944    Variable $shipping_class might not be defined.                                           
+  9038    Variable $fount_post in empty() always exists and is not falsy.                          
+  9305    Variable $shipping_class might not be defined.                                           
+  9441    Variable $fount_post in empty() always exists and is not falsy.                          
+  10129   Variable $display_banner_flag might not be defined.                                      
+ ------- ----------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------- 
+  Line   admin/list-tables/class-wc-flat-rate-rule-table.php                   
+ ------ ---------------------------------------------------------------------- 
+  98     Call to an undefined method                                           
+         WC_Advanced_Flat_Rate_Shipping_Table::prepare_column_headers().       
+  177    Variable $num_posts in empty() always exists and is not falsy.        
+  240    Variable $query_status in empty() always exists and is not falsy.     
+  314    Method WC_Advanced_Flat_Rate_Shipping_Table::column_title() should    
+         return string but return statement is missing.                        
+  363    Method WC_Advanced_Flat_Rate_Shipping_Table::column_shipping_name()   
+         should return string but return statement is missing.                 
+  442    Variable $sm_is_taxable in empty() always exists and is not falsy.    
+  522    Variable $method_id_cb in isset() always exists and is not nullable.  
+  528    Undefined variable: $deletenonce                                      
+  528    Variable $deletenonce in isset() always exists and is not nullable.   
+ ------ ---------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   admin/list-tables/class-wc-shipping-zones-table.php                  
+ ------ --------------------------------------------------------------------- 
+  125    Variable $postcode_list_arr might not be defined.                    
+  127    Variable $postcode_list_arr might not be defined.                    
+  139    Variable $location_code_arr might not be defined.                    
+  157    Variable $location_code_arr might not be defined.                    
+  179    Method WC_Shipping_Zones_Table::column_zone_type() should return     
+         string but return statement is missing.                              
+  260    Undefined variable: $deletenonce                                     
+  260    Variable $deletenonce in isset() always exists and is not nullable.  
+ ------ --------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-add-ons-page.php                                
+ ------ --------------------------------------------------------------------- 
+  10     Function fs_request_get not found.                                   
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  22     Function fs_text_x_inline not found.                                 
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  23     Function fs_text_inline not found.                                   
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  38     Function fs_text_x_inline not found.                                 
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  39     Function fs_text_inline not found.                                   
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  47     Call to static method get_active_plugins_directories_map() on an     
+         unknown class Freemius.                                              
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  72     Call to static method instance() on an unknown class FS_Storage.     
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  72     Constant WP_FS__MODULE_TYPE_PLUGIN not found.                        
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  89     Function fs_normalize_path not found.                                
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  131    Instantiated class FS_Pricing not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  167    Function fs_text_inline not found.                                   
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  211    Function fs_text_x_inline not found.                                 
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  212    Function fs_text_x_inline not found.                                 
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  230    Function fs_text_inline not found.                                   
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  234    Function fs_text_x_inline not found.                                 
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  276    Function fs_normalize_path not found.                                
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  315    Function fs_esc_html_inline not found.                               
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  321    Function fs_esc_attr_inline not found.                               
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  322    Function fs_text_inline not found.                                   
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+ ------ --------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------- 
+  Line   admin/partials/afrsm-forceall-shipping-method.php             
+ ------ -------------------------------------------------------------- 
+  48     Action callback returns bool but should not return anything.  
+ ------ -------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------- 
+  Line   admin/partials/afrsm-general-setting-page.php              
+ ------ ----------------------------------------------------------- 
+  72     Variable $forceall_label might not be defined.             
+  82     Variable $afrsm_hide_other_shipping might not be defined.  
+ ------ ----------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-init-shipping-methods.php                                                         
+ ------ ------------------------------------------------------------------------------------------------------- 
+  31     Action callback returns bool but should not return anything.                                           
+  151    Method AFRSM_Shipping_Method::calculate_shipping() should return bool                                  
+         but return statement is missing.                                                                       
+  409    Variable $getFeesPerQtyFlag might not be defined.                                                      
+  411    Variable $getFeesPerQty might not be defined.                                                          
+  412    Variable $extraProductCost might not be defined.                                                       
+  415    Variable $extraProductCost might not be defined.                                                       
+  526    Variable $cost_on_product_status might not be defined.                                                 
+  527    Variable $cost_on_product_rule_match might not be defined.                                             
+  527    Variable $get_condition_array_ap_product might not be defined.                                         
+  529    Variable $cost_on_product_subtotal_status might not be defined.                                        
+  530    Variable $cost_on_product_subtotal_rule_match might not be defined.                                    
+  530    Variable $get_condition_array_ap_product_subtotal might not be                                         
+         defined.                                                                                               
+  532    Variable $cost_on_product_weight_status might not be defined.                                          
+  533    Variable $cost_on_product_weight_rule_match might not be defined.                                      
+  533    Variable $get_condition_array_ap_product_weight might not be defined.                                  
+  535    Variable $cost_on_category_status might not be defined.                                                
+  536    Variable $cost_on_category_rule_match might not be defined.                                            
+  536    Variable $get_condition_array_ap_category might not be defined.                                        
+  538    Variable $cost_on_category_subtotal_status might not be defined.                                       
+  539    Variable $cost_on_category_subtotal_rule_match might not be defined.                                   
+  539    Variable $get_condition_array_ap_category_subtotal might not be                                        
+         defined.                                                                                               
+  541    Variable $cost_on_category_weight_status might not be defined.                                         
+  542    Variable $cost_on_category_weight_rule_match might not be defined.                                     
+  542    Variable $get_condition_array_ap_category_weight might not be                                          
+         defined.                                                                                               
+  544    Variable $cost_on_tag_status might not be defined.                                                     
+  545    Variable $cost_on_tag_rule_match might not be defined.                                                 
+  545    Variable $get_condition_array_ap_tag might not be defined.                                             
+  547    Variable $cost_on_tag_subtotal_status might not be defined.                                            
+  548    Variable $cost_on_tag_subtotal_rule_match might not be defined.                                        
+  548    Variable $get_condition_array_ap_tag_subtotal might not be defined.                                    
+  550    Variable $cost_on_tag_weight_status might not be defined.                                              
+  551    Variable $cost_on_tag_weight_rule_match might not be defined.                                          
+  551    Variable $get_condition_array_ap_tag_weight might not be defined.                                      
+  553    Variable $cost_on_total_cart_qty_status might not be defined.                                          
+  554    Variable $cost_on_total_cart_qty_rule_match might not be defined.                                      
+  554    Variable $get_condition_array_ap_total_cart_qty might not be defined.                                  
+  556    Variable $cost_on_shipping_class_status might not be defined.                                          
+  557    Variable $cost_on_shipping_class_rule_match might not be defined.                                      
+  557    Variable $get_condition_array_ap_shipping_class might not be defined.                                  
+  559    Variable $cost_on_shipping_class_weight_status might not be defined.                                   
+  560    Variable $cost_on_shipping_class_weight_rule_match might not be                                        
+         defined.                                                                                               
+  560    Variable $get_condition_array_ap_shipping_class_weight might not be                                    
+         defined.                                                                                               
+  562    Variable $cost_on_shipping_class_subtotal_status might not be                                          
+         defined.                                                                                               
+  563    Variable $cost_on_shipping_class_subtotal_rule_match might not be                                      
+         defined.                                                                                               
+  563    Variable $get_condition_array_ap_shipping_class_subtotal might not be                                  
+         defined.                                                                                               
+  565    Variable $cost_on_product_attribute_status might not be defined.                                       
+  566    Variable $cost_on_product_attribute_rule_match might not be defined.                                   
+  566    Variable $get_condition_array_ap_product_attribute might not be                                        
+         defined.                                                                                               
+  579    Variable $match_advance_rule in empty() always exists and is not                                       
+         falsy.                                                                                                 
+  579    Variable $match_advance_rule in isset() always exists and is not                                       
+         nullable.                                                                                              
+  673    Variable $is_free_shipping_before_discount might not be defined.                                       
+  711    Variable $cart_product_ids_arr might not be defined.                                                   
+  729    Variable $get_what_to_do_method might not be defined.                                                  
+  842    Variable $cat_id_list in isset() always exists and is not nullable.                                    
+  867    Variable $tag_id_list in isset() always exists and is not nullable.                                    
+  1272   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_product_per_qty__premium_only()            
+         should return array but return statement is missing.                                                   
+  1330   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_category_per_qty__premium_only()           
+         should return array but return statement is missing.                                                   
+  1377   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_tag_per_qty__premium_only()                
+         should return array but return statement is missing.                                                   
+  1420   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_total_cart_qty__premium_only()             
+         should return array but return statement is missing.                                                   
+  1461   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_shipping_class_per_qty__premium_only()     
+         should return array but return statement is missing.                                                   
+  1509   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_product_per_weight__premium_only()         
+         should return array but return statement is missing.                                                   
+  1557   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_category_per_weight__premium_only()        
+         should return array but return statement is missing.                                                   
+  1604   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_tag_per_weight__premium_only()             
+         should return array but return statement is missing.                                                   
+  1649   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_total_cart_weight()                        
+         should return array but return statement is missing.                                                   
+  1692   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_shipping_class_weight__premium_only()      
+         should return array but return statement is missing.                                                   
+  1737   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_total_cart_subtotal()                      
+         should return array but return statement is missing.                                                   
+  1784   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_product_subtotal__premium_only()           
+         should return array but return statement is missing.                                                   
+  1833   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_category_subtotal__premium_only()          
+         should return array but return statement is missing.                                                   
+  1882   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_tag_subtotal__premium_only()               
+         should return array but return statement is missing.                                                   
+  1929   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_shipping_class_subtotal__premium_only()    
+         should return array but return statement is missing.                                                   
+  1974   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_advance_pricing_rules_product_attribute_per_qty__premium_only()  
+         should return array but return statement is missing.                                                   
+  2041   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_cart_subtotal_before_discount_cost__premium_only()               
+         should return array but return statement is missing.                                                   
+  2086   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_cart_subtotal_after_discount_cost__premium_only()                
+         should return array but return statement is missing.                                                   
+  2177   Method                                                                                                 
+         AFRSM_Shipping_Method::afrsm_shipping_cart_subtotal_cart_productspecific_cost__premium_only()          
+         should return array but return statement is missing.                                                   
+  2244   Constant ICL_SITEPRESS_VERSION not found.                                                              
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                    
+  2247   Function wpml_get_language_information not found.                                                      
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                    
+  2287   Variable $sm_post_data in empty() always exists and is not falsy.                                      
+  2336   Access to an undefined property AFRSM_Shipping_Method::$fee_cost.                                      
+         💡 Learn more:                                                                                         
+            https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+  2343   Function remove_shortcode invoked with 2 parameters, 1 required.                                       
+  2431   Access to an undefined property AFRSM_Shipping_Method::$fee_cost.                                      
+         💡 Learn more:                                                                                         
+            https://phpstan.org/blog/solving-phpstan-access-to-undefined-property                               
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-pro-add-new-page.php                              
+ ------ ----------------------------------------------------------------------- 
+  8      Class Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro constructor      
+         invoked with 2 parameters, 0 required.                                 
+  560    Function esc_attr invoked with 2 parameters, 1 required.               
+  560    Variable $fee_settings_unique_shipping_title might not be defined.     
+  578    Function esc_attr invoked with 2 parameters, 1 required.               
+  609    Variable $getFeesPerQtyFlag might not be defined.                      
+  632    Variable $getFeesPerQty might not be defined.                          
+  693    Function esc_attr invoked with 2 parameters, 1 required.               
+  693    Variable $sm_estimation_delivery might not be defined.                 
+  716    Function esc_attr invoked with 2 parameters, 1 required.               
+  716    Variable $sm_start_date might not be defined.                          
+  739    Function esc_attr invoked with 2 parameters, 1 required.               
+  739    Variable $sm_end_date might not be defined.                            
+  772    Function esc_attr invoked with 2 parameters, 1 required.               
+  803    Function esc_attr invoked with 2 parameters, 1 required.               
+  803    Variable $sm_time_from might not be defined.                           
+  805    Function esc_attr invoked with 2 parameters, 1 required.               
+  805    Variable $sm_time_to might not be defined.                             
+  891    Variable $sm_free_shipping_based_on in isset() always exists and is    
+         not nullable.                                                          
+  892    Variable $sm_free_shipping_based_on in isset() always exists and is    
+         not nullable.                                                          
+  896    Variable $sm_free_shipping_based_on in isset() always exists and is    
+         not nullable.                                                          
+  925    Variable $sm_free_shipping_based_on_product might not be defined.      
+  1022   Variable $sm_free_shipping_exclude_product might not be defined.       
+  1027   Variable $sm_free_shipping_exclude_product might not be defined.       
+  1036   Variable $sm_free_shipping_exclude_product might not be defined.       
+  1073   Variable $sm_free_shipping_cost_before_discount might not be defined.  
+  1088   Variable $sm_free_shipping_cost_left_notice might not be defined.      
+  1103   Function esc_attr invoked with 2 parameters, 1 required.               
+  1103   Variable $sm_free_shipping_cost_left_notice_msg might not be defined.  
+  1152   Variable $is_allow_custom_weight_base might not be defined.            
+  1163   Variable $sm_custom_weight_base_cost might not be defined.             
+  1174   Function esc_attr invoked with 2 parameters, 1 required.               
+  1174   Variable $sm_custom_weight_base_per_each might not be defined.         
+  1185   Function esc_attr invoked with 2 parameters, 1 required.               
+  1185   Variable $sm_custom_weight_base_over might not be defined.             
+  1212   Variable $is_allow_custom_qty_base might not be defined.               
+  1223   Variable $sm_custom_qty_base_cost might not be defined.                
+  1234   Function esc_attr invoked with 2 parameters, 1 required.               
+  1234   Variable $sm_custom_qty_base_per_each might not be defined.            
+  1245   Function esc_attr invoked with 2 parameters, 1 required.               
+  1245   Variable $sm_custom_qty_base_over might not be defined.                
+  1286   Function esc_attr invoked with 2 parameters, 1 required.               
+  1350   Function wc_gzd_get_shipping_provider_select not found.                
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols    
+  1875   Function esc_attr invoked with 2 parameters, 1 required.               
+  1895   Variable $cost_on_product_status might not be defined.                 
+  1907   Variable $cost_on_product_rule_match might not be defined.             
+  1908   Variable $cost_on_product_rule_match might not be defined.             
+  1956   Variable $filled_arr in isset() always exists and is not nullable.     
+  1983   Function esc_attr invoked with 2 parameters, 1 required.               
+  1992   Function esc_attr invoked with 2 parameters, 1 required.               
+  2001   Function esc_attr invoked with 2 parameters, 1 required.               
+  2076   Variable $cost_on_product_subtotal_status might not be defined.        
+  2089   Variable $cost_on_product_subtotal_rule_match might not be defined.    
+  2090   Variable $cost_on_product_subtotal_rule_match might not be defined.    
+  2140   Variable $filled_product_subtotal in isset() always exists and is not  
+         nullable.                                                              
+  2166   Function esc_attr invoked with 2 parameters, 1 required.               
+  2176   Function esc_attr invoked with 2 parameters, 1 required.               
+  2186   Function esc_attr invoked with 2 parameters, 1 required.               
+  2260   Variable $cost_on_product_weight_status might not be defined.          
+  2273   Variable $cost_on_product_weight_rule_match might not be defined.      
+  2274   Variable $cost_on_product_weight_rule_match might not be defined.      
+  2320   Variable $product_weight_filled_arr in isset() always exists and is    
+         not nullable.                                                          
+  2347   Function esc_attr invoked with 2 parameters, 1 required.               
+  2355   Function esc_attr invoked with 2 parameters, 1 required.               
+  2363   Function esc_attr invoked with 2 parameters, 1 required.               
+  2440   Variable $cost_on_category_status might not be defined.                
+  2452   Variable $cost_on_category_rule_match might not be defined.            
+  2453   Variable $cost_on_category_rule_match might not be defined.            
+  2501   Variable $filled_arr in isset() always exists and is not nullable.     
+  2529   Function esc_attr invoked with 2 parameters, 1 required.               
+  2538   Function esc_attr invoked with 2 parameters, 1 required.               
+  2547   Function esc_attr invoked with 2 parameters, 1 required.               
+  2623   Variable $cost_on_category_subtotal_status might not be defined.       
+  2635   Variable $cost_on_category_subtotal_rule_match might not be defined.   
+  2636   Variable $cost_on_category_subtotal_rule_match might not be defined.   
+  2686   Variable $filled_category_subtotal in isset() always exists and is     
+         not nullable.                                                          
+  2713   Function esc_attr invoked with 2 parameters, 1 required.               
+  2723   Function esc_attr invoked with 2 parameters, 1 required.               
+  2733   Function esc_attr invoked with 2 parameters, 1 required.               
+  2813   Variable $cost_on_category_weight_status might not be defined.         
+  2826   Variable $cost_on_category_weight_rule_match might not be defined.     
+  2827   Variable $cost_on_category_weight_rule_match might not be defined.     
+  2875   Variable $filled_arr_cat_weight in isset() always exists and is not    
+         nullable.                                                              
+  2902   Function esc_attr invoked with 2 parameters, 1 required.               
+  2910   Function esc_attr invoked with 2 parameters, 1 required.               
+  2918   Function esc_attr invoked with 2 parameters, 1 required.               
+  2996   Variable $cost_on_tag_status might not be defined.                     
+  3008   Variable $cost_on_tag_rule_match might not be defined.                 
+  3009   Variable $cost_on_tag_rule_match might not be defined.                 
+  3057   Variable $filled_arr in isset() always exists and is not nullable.     
+  3085   Function esc_attr invoked with 2 parameters, 1 required.               
+  3094   Function esc_attr invoked with 2 parameters, 1 required.               
+  3103   Function esc_attr invoked with 2 parameters, 1 required.               
+  3178   Variable $cost_on_tag_subtotal_status might not be defined.            
+  3190   Variable $cost_on_tag_subtotal_rule_match might not be defined.        
+  3191   Variable $cost_on_tag_subtotal_rule_match might not be defined.        
+  3239   Variable $filled_tag_subtotal in isset() always exists and is not      
+         nullable.                                                              
+  3267   Function esc_attr invoked with 2 parameters, 1 required.               
+  3276   Function esc_attr invoked with 2 parameters, 1 required.               
+  3285   Function esc_attr invoked with 2 parameters, 1 required.               
+  3362   Variable $cost_on_tag_weight_status might not be defined.              
+  3375   Variable $cost_on_tag_weight_rule_match might not be defined.          
+  3376   Variable $cost_on_tag_weight_rule_match might not be defined.          
+  3424   Variable $filled_arr_cat_weight in isset() always exists and is not    
+         nullable.                                                              
+  3451   Function esc_attr invoked with 2 parameters, 1 required.               
+  3459   Function esc_attr invoked with 2 parameters, 1 required.               
+  3467   Function esc_attr invoked with 2 parameters, 1 required.               
+  3544   Variable $cost_on_total_cart_qty_status might not be defined.          
+  3557   Variable $cost_on_total_cart_qty_rule_match might not be defined.      
+  3558   Variable $cost_on_total_cart_qty_rule_match might not be defined.      
+  3606   Variable $filled_total_cart_qty in isset() always exists and is not    
+         nullable.                                                              
+  3626   Function esc_attr invoked with 2 parameters, 1 required.               
+  3635   Function esc_attr invoked with 2 parameters, 1 required.               
+  3643   Function esc_attr invoked with 2 parameters, 1 required.               
+  3797   Variable $filled_total_cart_weight in isset() always exists and is     
+         not nullable.                                                          
+  3817   Function esc_attr invoked with 2 parameters, 1 required.               
+  3825   Function esc_attr invoked with 2 parameters, 1 required.               
+  3833   Function esc_attr invoked with 2 parameters, 1 required.               
+  3849   Variable $cnt_product might not be defined.                            
+  3970   Variable $filled_total_cart_subtotal in isset() always exists and is   
+         not nullable.                                                          
+  3990   Function esc_attr invoked with 2 parameters, 1 required.               
+  4000   Function esc_attr invoked with 2 parameters, 1 required.               
+  4010   Function esc_attr invoked with 2 parameters, 1 required.               
+  4026   Variable $cnt_product might not be defined.                            
+  4091   Variable $cost_on_shipping_class_status might not be defined.          
+  4104   Variable $cost_on_shipping_class_rule_match might not be defined.      
+  4105   Variable $cost_on_shipping_class_rule_match might not be defined.      
+  4153   Variable $filled_arr in isset() always exists and is not nullable.     
+  4181   Function esc_attr invoked with 2 parameters, 1 required.               
+  4190   Function esc_attr invoked with 2 parameters, 1 required.               
+  4199   Function esc_attr invoked with 2 parameters, 1 required.               
+  4215   Variable $cnt_product might not be defined.                            
+  4277   Variable $cost_on_shipping_class_weight_status might not be defined.   
+  4290   Variable $cost_on_shipping_class_weight_rule_match might not be        
+         defined.                                                               
+  4291   Variable $cost_on_shipping_class_weight_rule_match might not be        
+         defined.                                                               
+  4339   Variable $filled_arr in isset() always exists and is not nullable.     
+  4367   Function esc_attr invoked with 2 parameters, 1 required.               
+  4376   Function esc_attr invoked with 2 parameters, 1 required.               
+  4385   Function esc_attr invoked with 2 parameters, 1 required.               
+  4401   Variable $cnt_product might not be defined.                            
+  4464   Variable $cost_on_shipping_class_subtotal_status might not be          
+         defined.                                                               
+  4477   Variable $cost_on_shipping_class_subtotal_rule_match might not be      
+         defined.                                                               
+  4478   Variable $cost_on_shipping_class_subtotal_rule_match might not be      
+         defined.                                                               
+  4526   Variable $filled_arr in isset() always exists and is not nullable.     
+  4554   Function esc_attr invoked with 2 parameters, 1 required.               
+  4563   Function esc_attr invoked with 2 parameters, 1 required.               
+  4572   Function esc_attr invoked with 2 parameters, 1 required.               
+  4588   Variable $cnt_product might not be defined.                            
+  4626   Function esc_attr invoked with 2 parameters, 1 required.               
+  4649   Variable $cost_on_product_attribute_status might not be defined.       
+  4660   Variable $cost_on_product_attribute_rule_match might not be defined.   
+  4661   Variable $cost_on_product_attribute_rule_match might not be defined.   
+  4709   Variable $filled_arr in isset() always exists and is not nullable.     
+  4736   Function esc_attr invoked with 2 parameters, 1 required.               
+  4745   Function esc_attr invoked with 2 parameters, 1 required.               
+  4754   Function esc_attr invoked with 2 parameters, 1 required.               
+  4770   Variable $cnt_product might not be defined.                            
+ ------ ----------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-pro-get-started-page.php                        
+ ------ --------------------------------------------------------------------- 
+  30     Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  38     Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  46     Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+ ------ --------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-pro-list-page.php                                
+ ------ ---------------------------------------------------------------------- 
+  59     Variable $getnonce in isset() always exists and is not nullable.      
+  104    Variable $getnonce in isset() always exists and is not nullable.      
+  131    Variable $id in isset() always exists and is not nullable.            
+  133    Variable $getnonce in isset() always exists and is not nullable.      
+  203    Method AFRSM_Rule_Listing_Page::afrsm_sj_save_method() should return  
+         bool but return statement is missing.                                 
+ ------ ---------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-pro-shipping-zone-page.php                     
+ ------ -------------------------------------------------------------------- 
+  41     Variable $getnonce in isset() always exists and is not nullable.    
+  70     Variable $getnonce in isset() always exists and is not nullable.    
+  115    Method AFRSM_Shipping_Zone::afrsm_pro_sz_save_zone() should return  
+         bool but return statement is missing.                               
+ ------ -------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   admin/partials/afrsm-upgrade-dashboard.php                           
+ ------ --------------------------------------------------------------------- 
+  53     Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  53     Function esc_attr invoked with 2 parameters, 1 required.             
+  79     Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  79     Function esc_attr invoked with 2 parameters, 1 required.             
+  105    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  105    Function esc_attr invoked with 2 parameters, 1 required.             
+  131    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  131    Function esc_attr invoked with 2 parameters, 1 required.             
+  158    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  158    Function esc_attr invoked with 2 parameters, 1 required.             
+  184    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  184    Function esc_attr invoked with 2 parameters, 1 required.             
+  210    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  210    Function esc_attr invoked with 2 parameters, 1 required.             
+  236    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  236    Function esc_attr invoked with 2 parameters, 1 required.             
+  262    Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+  262    Function esc_attr invoked with 2 parameters, 1 required.             
+ ------ --------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------- 
+  Line   admin/partials/class-wc-extra-flat-eval-math.php                   
+ ------ ------------------------------------------------------------------- 
+  131    Call to an undefined static method WC_Eval_Math_Extra::trigger().  
+  236    Call to an undefined static method WC_Eval_Math_Extra::trigger().  
+ ------ ------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------- 
+  Line   admin/partials/form-edit-shipping-zone.php                
+ ------ ---------------------------------------------------------- 
+  84     Function esc_attr invoked with 2 parameters, 1 required.  
+  109    Result of function selected (void) is used.               
+ ------ ---------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   admin/partials/header/plugin-header.php                              
+ ------ --------------------------------------------------------------------- 
+  31     Constant AFRSM_PRO_PLUGIN_URL not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+ ------ --------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------- 
+  Line   admin/partials/html-zone-list.php                                  
+ ------ ------------------------------------------------------------------- 
+  28     Calling self::afrsm_pro_sz_list_shipping_zones() outside of class  
+         scope.                                                             
+ ------ ------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   advanced-flat-rate-shipping-for-woocommerce.php                      
+ ------ --------------------------------------------------------------------- 
+  45     Function fs_dynamic_init not found.                                  
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols  
+ ------ --------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   includes/class-advanced-flat-rate-shipping-for-woocommerce.php            
+ ------ -------------------------------------------------------------------------- 
+  76     Callback expects 1 parameter, $accepted_args is set to 4.                 
+  76     Constant AFRSM_PRO_PLUGIN_BASENAME not found.                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols       
+  145    Action callback returns array but should not return anything.             
+  159    Access to an undefined property                                           
+         Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro::$afrsm_method.           
+         💡 Learn more:                                                            
+            https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+  163    Access to an undefined property                                           
+         Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro::$afrsm_forceall_method.  
+         💡 Learn more:                                                            
+            https://phpstan.org/blog/solving-phpstan-access-to-undefined-property  
+ ------ -------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------- 
+  Line   public/class-advanced-flat-rate-shipping-for-woocommerce-public.php                          
+ ------ --------------------------------------------------------------------------------------------- 
+  144    Variable $shipping_package in isset() always exists and is not                               
+         nullable.                                                                                    
+  618    Method                                                                                       
+         Advanced_Flat_Rate_Shipping_For_WooCommerce_Pro_Public::afrsm_set_default_shipping_method()  
+         should return array but return statement is missing.                                         
+ ------ --------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------ 
+  Line   woocommerce/cart/cart-shipping.php                    
+ ------ ------------------------------------------------------ 
+  22     Variable $package might not be defined.               
+  43     Variable $package_name might not be defined.          
+  44     Variable $package_name might not be defined.          
+  45     Variable $available_methods might not be defined.     
+  47     Variable $index might not be defined.                 
+  48     Variable $index might not be defined.                 
+  49     Variable $index might not be defined.                 
+  55     Variable $chosen_method might not be defined.         
+  91     Variable $forceall_label might not be defined.        
+  91     Variable $public_object might not be defined.         
+  101    Variable $chosen_method might not be defined.         
+  101    Variable $index might not be defined.                 
+  103    Variable $index might not be defined.                 
+  110    Variable $index might not be defined.                 
+  116    Variable $index might not be defined.                 
+  119    Variable $index might not be defined.                 
+  122    Variable $index might not be defined.                 
+  124    Variable $index might not be defined.                 
+  161    Variable $show_package_details might not be defined.  
+  162    Variable $package_details might not be defined.       
+ ------ ------------------------------------------------------ 
+
+ [ERROR] Found 482 errors                                                       
+

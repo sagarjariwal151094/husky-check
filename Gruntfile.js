@@ -18,6 +18,7 @@ module.exports = function(grunt){
             'Author URI of the plugin/theme',
             'Description of the plugin/theme'
         ];
+        GRUNT_VERSION = '1.2.0'; // This is the version of grunt (Do not change this section without consulting [sagar.jariwala@multidots.com]!)
     var PLUGIN_NAME = PLUGIN_MAIN_FILE.replaceAll("-","_").replaceAll(".php",""); //Plugin name with underscore
 
     //Configuration
@@ -26,7 +27,8 @@ module.exports = function(grunt){
         compress: {
             main: {
                 options: {
-                    archive: ZIP_FILE_NAME
+                    archive: ZIP_FILE_NAME,
+                    mode: 'zip'
                 },
                 files: [{
                     src: ['**', '!**/node_modules/**', '!**/vendor/**', '!**/Gruntfile.js', '!**/composer.json', '!**/composer.lock', '!**/package-lock.json', '!**/package.json', '!**/*.zip', '!**/phpcs_report.txt', '!**/phpcs.xml', '!**/'+PLUGIN_NAME+'_phpcs_report.csv' ], 
@@ -46,10 +48,9 @@ module.exports = function(grunt){
                 bin: 'vendor/bin/phpcs',
                 standard: './ruleset.xml',
                 reportFile: './'+PLUGIN_NAME+'_phpcs_report.csv',
-                // reportFile: './phpcs_report.txt',
                 report: 'csv',
                 warningSeverity: 1,
-                errorSeverity: 5,
+                errorSeverity: 1,
             }
         },
 
@@ -184,14 +185,9 @@ module.exports = function(grunt){
             src: [ '**/*.js', '!**/freemius/**', '!**/node_modules/**', '!**/vendor/**', '!**/*.min.js', '!**/Gruntfile.js', '!**/jquery.*.js', '!**/help-scout-beacon.js']
         },
 
-        phpstan: {
-            options: {
-                bin: "vendor/bin/phpstan",
-                config: "phpstan.neon"
-            },
-            php: {
-                src: ['*.php'],
-            }
+        exec: {
+            phpstan: 'vendor/bin/phpstan analyse -c phpstan.neon --memory-limit 4096M > ' + PLUGIN_NAME + '_phpstan_report.txt',
+            wpv: 'wp cli version'
         }
     });
 
@@ -203,25 +199,24 @@ module.exports = function(grunt){
     grunt.loadNpmTasks( 'grunt-contrib-clean' );
     grunt.loadNpmTasks( 'grunt-jsvalidate' );
     grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-    grunt.loadNpmTasks( 'grunt-phpstan' );
+    grunt.loadNpmTasks( 'grunt-exec' );
 
     //Register tasks to perform
     grunt.registerTask( 'dotcmdstart', function(){
 
         var d = new Date(); 
-        var stamp = d.toLocaleString();
-
-        grunt.log.writeln('WelCome to '+'thdotStore'['blue'].bold+' gruntJS task runner...');
-        grunt.log.writeln('Script has been started @ '['green']+stamp.bold['blue']);
-
+        var stamp = d.toLocaleString("hi-IN");
+        grunt.log.writeln( 'Dotstore GruntJS ' + '(v'.bold['green'] + GRUNT_VERSION.bold['green'] +')'.bold['green'] );
+        grunt.log.writeln('Script has been started @ '['cyan']+stamp.bold['green']);
     });
 
     grunt.registerTask( 'dotcmdend', function(){
         var d = new Date(); 
-        var stamp = d.toLocaleString();
-        console.log('Script has been ended @ '['green']+stamp.bold['blue']);
+        var stamp = d.toLocaleString("hi-IN");
+        console.log('Script has been ended @ '['cyan']+stamp.bold['green']);
     });
 
-    grunt.registerTask( 'default', [ 'dotcmdstart', 'clean', 'jsvalidate', 'jshint', 'checktextdomain', 'phpcs', 'makepot:src', 'compress', 'dotcmdend'] );
+    grunt.registerTask( 'default', [ 'dotcmdstart', 'exec:wpv', 'clean', 'jsvalidate', 'jshint', 'checktextdomain', 'phpcs', 'exec:phpstan', 'makepot:src', 'compress', 'dotcmdend'] );
+    grunt.registerTask( 'pushing', [ 'dotcmdstart', 'exec:wpv', 'clean', 'jsvalidate', 'jshint', 'checktextdomain', 'phpcs', 'makepot:src', 'compress', 'dotcmdend'] );
 
 }

@@ -1,4 +1,10 @@
 parameters:
-	level: 0
-	paths:
-		- includes
+    level: 0
+    paths:
+        - ./
+    excludePaths:
+        - vendor
+        - node_modules
+        - freemius
+    bootstrapFiles:
+        - vendor/php-stubs/woocommerce-stubs/woocommerce-stubs.php
