@@ -217,6 +217,6 @@ module.exports = function(grunt){
     });
 
     grunt.registerTask( 'default', [ 'dotcmdstart', 'exec:wpv', 'clean', 'jsvalidate', 'jshint', 'checktextdomain', 'phpcs', 'exec:phpstan', 'makepot:src', 'compress', 'dotcmdend'] );
-    grunt.registerTask( 'pushing', [ 'dotcmdstart', 'exec:wpv', 'clean', 'jsvalidate', 'jshint', 'checktextdomain', 'phpcs', 'makepot:src', 'compress', 'dotcmdend'] );
+    grunt.registerTask( 'pushing', [ 'dotcmdstart', 'exec:wpv', 'clean', 'jsvalidate', 'jshint', 'checktextdomain', 'phpcs', 'dotcmdend'] );
 
 }
